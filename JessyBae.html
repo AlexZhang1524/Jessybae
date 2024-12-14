@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css" >
+    <title>To My Baby!!!1</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="text"> Will you be mine forever?🥺 </h1>
+            <h1 class="text"> I love you sosososososo much Jessy, Happy Anniversary baby!❤️ </h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media.tenor.com/dg7Th23TzFUAAAAi/cat_-vodk.gif"
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+    </div>
+    
+
+    <script>
+        function nextPage() {
+            window.location.href="yes.html";
+        }
+
+        function moveButton(){
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 70;
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 40;
+            document.getElementById('noButton').style.left = `${x}px`;
+            document.getElementById('noButton').style.top = `${y}px`;
+
+        }
+    </script>
+</body>
+</html>
